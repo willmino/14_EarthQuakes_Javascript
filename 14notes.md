@@ -148,3 +148,56 @@ Remember to use git checkout [name of branch] to switch between branches
 Remember to use git checkout -b [name of your branch] to switch to a new branch.
 
 
+I created new branch:
+
+git checkout -b Mapping_Single_Points
+
+Then, I pushed all the changes from the branch in my terminal to make a new branch on github using this code:
+
+git status
+git add .
+git status
+git commit -m "uploading files"
+git push --set-upstream origin Mapping_Single_Points
+
+I was able to push the new branch Mapping_Single_Points to github! Now its listed as a branch on github.
+
+Add a Marker to the Map
+
+Below is the line of code to add a marker to the map. The coordinate are passed as a list through the L.marker() function. addTo(map) function is chained to this code.
+
+var marker = L.marker([51.5, -0.09]).addTo(map);
+
+
+Add a Circle to the Map
+
+with this code:
+
+/*
+
+L.circle([34.0522, -118.2437], {
+   radius: 100
+}).addTo(map);
+
+*/
+Replace the marker code with this code fore the circle creation.
+
+
+You can also create a circle using the circleMarker() function. This function measures the radius of the circle in pixels.
+With the default radius set at 10 pixels.
+
+ L.circleMarker([34.0522, -118.2437]).addTo(map);
+
+
+Here is what the full circle marker code looks like: 
+
+L.circleMarker([34.0522, -118.2437],{
+  radius:300,
+  color:"black",
+  fillColor: "#ffffa1"
+}).addTo(map);
+
+
+
+
+
