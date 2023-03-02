@@ -201,3 +201,28 @@ L.circleMarker([34.0522, -118.2437],{
 
 
 
+
+14.4.2
+
+Edit the forEach function so that it looks like this.
+
+cityData.forEach(function(city){
+  console.log(city)
+  L.circleMarker(city.location, {
+    radius: city.population/100000
+  })
+  .bindPopup("<h2>" + city.city + "," + city.state + "</h2> <hr> <h3> Population " + city.population.toLocaleString() + "</h3>")
+  .addTo(map);
+});
+
+
+
+
+14.4.3 MAp Lines
+
+
+
+Copy the folder with the extact file structure from the last section and make a new folder with its contents.
+
+New folder is called Mapping_Lines.
+
