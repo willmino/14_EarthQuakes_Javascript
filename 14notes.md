@@ -131,7 +131,7 @@ Resolve the conflicts to the pull request (conflicts are preventing merge)
 Then, click to submit another pull request, and use the options available to select commit merge. Voila!
 
 
-Now the branches are merge!
+Now the branches are merged!
 
 
 14.4.1
