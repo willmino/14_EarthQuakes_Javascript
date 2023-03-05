@@ -62,7 +62,11 @@ function styleInfo(feature) {
 }
 
 // This function determines the color of the circle based on the magnitude of the earthquake.
+<<<<<<< HEAD
 /*function getColor(magnitude) {
+=======
+function getColor(magnitude) {
+>>>>>>> f9e6dd37dbed792c25d9a6754ec0bffa9611d09c
   if (magnitude > 5) {
     return "#ea2c2c";
   }
@@ -87,7 +91,10 @@ function getRadius(magnitude) {
   }
   return magnitude * 4;
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> f9e6dd37dbed792c25d9a6754ec0bffa9611d09c
 
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
   console.log(data);
