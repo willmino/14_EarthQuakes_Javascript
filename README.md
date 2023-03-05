@@ -5,7 +5,7 @@ Javascript and Geojson files to plot interactive maps
 
 This project used javscript code with an index.html file to produce an interactive webpage.
 
-[earthquake_website_image](https://github.com/willmino/Mapping_Earthquakes/blob/main/webpage.png)
+![earthquake_website_image](https://github.com/willmino/Mapping_Earthquakes/blob/main/webpage.png)
 
 Maps were generated from the Mapbox API. (https://www.mapbox.com/)
 Javascript code modules from Leaflet. (https://leafletjs.com/)
