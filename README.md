@@ -33,7 +33,7 @@ The bindPopup() function, itself nested in the onEachFeature() function, generat
 ### Legend
 A map legend is created as the variable "legend" set equal to :
 `L.control({position: "bottomright"});`.
-This creates a box that holds all the legend contents. Each color box of the and corresponding magnitude value is then dynamically generated using a for loop nested in the legend.onAdd() function. The line `let div = L.DomUtil.create("div", "info legend");` allows for a division to be created for each box to obtain a specific color within the legend. The for loop then iterates through each magnitude of a possible earthquake, obrains its color from the boolean operational statement, and finally returns the resulting div element that is added to the legend object.
+This creates a box that holds all the legend contents. Each color box of the and corresponding magnitude value is then dynamically generated using a for loop nested in the legend.onAdd() function. The line `let div = L.DomUtil.create("div", "info legend");` allows for a division to be created for each box to obtain a specific color within the legend. The for loop then iterates through each magnitude of a possible earthquake, obtains its color from the boolean operational statement, and finally returns the resulting div element that is added to the legend object.
 
 ### Dynamics of the Website
 Data obtained from geoJSON() functions were added to each respective layer on the map.
